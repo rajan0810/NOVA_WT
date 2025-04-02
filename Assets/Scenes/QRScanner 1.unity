@@ -2595,7 +2595,7 @@ MonoBehaviour:
     _onFullTranscription:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2023935541}
+        - m_Target: {fileID: 2023935544}
           m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
           m_MethodName: set_text
           m_Mode: 0
@@ -2871,8 +2871,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd3b5321620fdbf4d9c56fae35265fda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gasUrl: https://script.google.com/macros/s/AKfycbypbTdmGsjWX-msyU-knRAnr8CXyeISGPUkB_N9V3aqSN_5Ur4Tyl4w79etDudk-BZxMw/exec
-  prompt: What is bike engine spark plug?
+  gasUrl: https://script.google.com/macros/s/AKfycbysko8CQk38x9KYX2WBxgFUTAaqqPN8WVKqnTGFyQ-IC1GGlKljohQzi_WYOknvjECsAg/exec
+  prompt: {fileID: 2023935544}
+  Response: {fileID: 2023935540}
 --- !u!4 &1989074101
 Transform:
   m_ObjectHideFlags: 0
@@ -2897,25 +2898,51 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 152937926884308758, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_text
+      value: Answer by AI
+      objectReference: {fileID: 0}
     - target: {fileID: 1163564591087428320, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_Name
       value: DistanceGrabObject (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2838046300326671528, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_text
+      value: 'Listening
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2841967431228697644, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_text
+      value: Your Question
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.019184813
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.019184813
+      objectReference: {fileID: 0}
     - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.495
+      value: -0.626574
       objectReference: {fileID: 0}
     - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.366
+      value: 2.416458
       objectReference: {fileID: 0}
     - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9817041
+      value: -0.1904122
       objectReference: {fileID: 0}
     - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2923,7 +2950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.19041263
+      value: -0.9817043
       objectReference: {fileID: 0}
     - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2935,20 +2962,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -21.954
+      value: -201.954
       objectReference: {fileID: 0}
     - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
---- !u!114 &2023935541 stripped
+--- !u!114 &2023935540 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2841967431228697644, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+  m_CorrespondingSourceObject: {fileID: 152937926884308758, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
   m_PrefabInstance: {fileID: 2023935539}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -2960,6 +2991,17 @@ MonoBehaviour:
 --- !u!114 &2023935542 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2838046300326671528, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+  m_PrefabInstance: {fileID: 2023935539}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2023935544 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2841967431228697644, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
   m_PrefabInstance: {fileID: 2023935539}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

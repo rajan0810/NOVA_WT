@@ -1,15 +1,17 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 
 public class APIManager : MonoBehaviour
 {
     [SerializeField] private string gasUrl;
-    [SerializeField] private string prompt;
+    [SerializeField] private TextMeshProUGUI prompt;
+    [SerializeField] private TextMeshProUGUI Response;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (OVRInput.GetUp(OVRInput.Button.Two))
         {
             StartCoroutine(SendDataToGas());
         }
@@ -18,7 +20,7 @@ public class APIManager : MonoBehaviour
     private IEnumerator SendDataToGas()
     {
         WWWForm form  = new WWWForm();
-        form.AddField("parameter", prompt);
+        form.AddField("parameter", prompt.text);
         UnityWebRequest www = UnityWebRequest.Post(gasUrl, form);
 
         yield return www.SendWebRequest();
@@ -34,5 +36,6 @@ public class APIManager : MonoBehaviour
         }
 
         Debug.Log(response);
+        Response.text = response;
     }
 }
