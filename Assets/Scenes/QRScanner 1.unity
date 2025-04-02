@@ -2902,9 +2902,45 @@ PrefabInstance:
       propertyPath: m_text
       value: Answer by AI
       objectReference: {fileID: 0}
+    - target: {fileID: 375998741375572062, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -46.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 375998741375572062, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -282.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 375998741375572062, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -103.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 716661549615546755, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_Color.b
+      value: 0.87058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 716661549615546755, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_Color.g
+      value: 0.10196078
+      objectReference: {fileID: 0}
+    - target: {fileID: 716661549615546755, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_Color.r
+      value: 0.32535237
+      objectReference: {fileID: 0}
     - target: {fileID: 1163564591087428320, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_Name
       value: DistanceGrabObject (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1305665325187509982, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -46.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1305665325187509982, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -539.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1305665325187509982, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 117.6
       objectReference: {fileID: 0}
     - target: {fileID: 2838046300326671528, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_text
@@ -2915,6 +2951,22 @@ PrefabInstance:
     - target: {fileID: 2841967431228697644, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_text
       value: Your Question
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950074198575416790, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 78.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950074198575416790, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763133063313039863, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 313.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763133063313039863, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 32.5
       objectReference: {fileID: 0}
     - target: {fileID: 7051042408539965915, guid: bc10db61c4a70f14ea0f1754becc33ad, type: 3}
       propertyPath: m_LocalScale.x
