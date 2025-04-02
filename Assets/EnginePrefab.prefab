@@ -205,7 +205,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -313,61 +313,13 @@ MonoBehaviour:
   _interactableView: {fileID: 4180714621100533127}
   _whenHover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2589657446938173320}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnhover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2589657446938173320}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6746062635449139559}
-        m_TargetAssemblyTypeName: TextManager, Assembly-CSharp
-        m_MethodName: ChangeText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2589657446938173320}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeSelectEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -487,6 +439,135 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &2145453287595783714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1721189295733835676}
+  - component: {fileID: 4607787781141098856}
+  m_Layer: 0
+  m_Name: ClickAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1721189295733835676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145453287595783714}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.65179443, y: 0.5766907, z: -0.07070923}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6228908960757388911}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &4607787781141098856
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145453287595783714}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7ac0166bacb8ad94ebd5820b4e19b802, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7ac0166bacb8ad94ebd5820b4e19b802, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2638544605385093806
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,6 +584,7 @@ GameObject:
   - component: {fileID: 4980083970629629407}
   - component: {fileID: 6409382409189508811}
   - component: {fileID: 260704114836340780}
+  - component: {fileID: 2207084422141550558}
   m_Layer: 0
   m_Name: Cone.001
   m_TagString: Untagged
@@ -556,7 +638,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -680,9 +762,9 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6746062635449139559}
-        m_TargetAssemblyTypeName: TextManager, Assembly-CSharp
-        m_MethodName: ChangeText
+      - m_Target: {fileID: 2207084422141550558}
+        m_TargetAssemblyTypeName: UIUpdate, Assembly-CSharp
+        m_MethodName: TextUpdate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -731,9 +813,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa00464cf7ce914590761af1f46502e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultMaterial: {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
-  hoverMaterial: {fileID: 2100000, guid: 00f42730dfca109429d39840a46601b0, type: 2}
-  selectMaterial: {fileID: 2100000, guid: 3b5cc91c3bf8cf74391252247f52fb59, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
+  hoverMaterial: {fileID: 2100000, guid: 564baa22202a94c46abfdb5c822e0d8f, type: 2}
+  selectMaterial: {fileID: 2100000, guid: 1eafcffb36243a14ebca02a1e6f398cf, type: 2}
+--- !u!114 &2207084422141550558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2638544605385093806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b61a0effa99a94e8ff9a220871528d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: {fileID: 9021693944522377749}
+  descriptionText: {fileID: 7098499287506824130}
+  text1: Part 1
+  text2: Description of Part 1
+--- !u!1 &2851747057141012452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9036851153934073720}
+  m_Layer: 0
+  m_Name: Parent Engine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9036851153934073720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2851747057141012452}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.110036284, w: 0.9939276}
+  m_LocalPosition: {x: -0.108, y: 0.287, z: -0.118}
+  m_LocalScale: {x: 0.006, y: 0.006, z: 0.006}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 3196570752496547701}
+  m_Father: {fileID: 6228908960757388911}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 12.635}
 --- !u!1 &2861388908168118896
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +933,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -911,61 +1041,13 @@ MonoBehaviour:
   _interactableView: {fileID: 5885252732088409858}
   _whenHover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 552998510964336597}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnhover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 552998510964336597}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6746062635449139559}
-        m_TargetAssemblyTypeName: TextManager, Assembly-CSharp
-        m_MethodName: ChangeText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 552998510964336597}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeSelectEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -981,6 +1063,173 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &2911542897178924805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3263408403873992424}
+  - component: {fileID: 2312905015637581654}
+  - component: {fileID: 8665492191416133990}
+  - component: {fileID: 8322920751906586670}
+  - component: {fileID: 5561104528789863604}
+  - component: {fileID: 3711956932582383475}
+  - component: {fileID: 7750641296133676380}
+  m_Layer: 0
+  m_Name: '[BuildingBlock] DistanceHandGrab'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3263408403873992424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2911542897178924805}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.031177474, y: -0.8622353, z: -0.32353213}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6317565438840744614}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2312905015637581654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2911542897178924805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b023183069df224080314a560e6e1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockId: 3f1827c2-c682-46d8-999e-0954e37e833e
+  instanceId: 4774e0f8-a064-42bb-9c50-2e598f82dc7b
+  version: 1
+  installationRoutineCheckpoint:
+    _installationRoutineId: 20b9ad69-c205-488d-a6b2-d3d7ca6c1e53
+    _installationVariants:
+    - _memberName: mode
+      _value: '{"value__":0}'
+--- !u!114 &8665492191416133990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2911542897178924805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transferOnSecondSelection: 1
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 0}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 6317565438840744614}
+  _maxGrabPoints: 1
+  _rigidbody: {fileID: 7485772552039874252}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 1
+--- !u!114 &8322920751906586670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2911542897178924805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 8665492191416133990}
+  _rigidbody: {fileID: 7485772552039874252}
+  _physicsGrabbable: {fileID: 0}
+  _resetGrabOnGrabsUpdated: 1
+  _slippiness: 0
+  _supportedGrabTypes: 3
+  _pinchGrabRules:
+    _thumbRequirement: 0
+    _indexRequirement: 2
+    _middleRequirement: 0
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 1
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 2
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 3711956932582383475}
+  _handAligment: 0
+  _handGrabPoses: []
+--- !u!114 &5561104528789863604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2911542897178924805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07525681efbca7a4e9643ab3a592ada7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 8665492191416133990}
+  _rigidbody: {fileID: 7485772552039874252}
+  _grabSource: {fileID: 0}
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
+  _movementProvider: {fileID: 3711956932582383475}
+--- !u!114 &3711956932582383475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2911542897178924805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 953054d108799b942815afb3405983ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7750641296133676380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2911542897178924805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0529a9671a3b6a74fab00c4d05312c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderer: {fileID: 0}
+  _customIcon: {fileID: 2800000, guid: aa3a2b3718100f84fb5d8ff9adb8ccb7, type: 3}
+  _snappiness: 1
 --- !u!1 &3007182054791921881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,7 +1299,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1158,61 +1407,13 @@ MonoBehaviour:
   _interactableView: {fileID: 1094666469252752451}
   _whenHover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6398029794041273547}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnhover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6398029794041273547}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6746062635449139559}
-        m_TargetAssemblyTypeName: TextManager, Assembly-CSharp
-        m_MethodName: ChangeText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6398029794041273547}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeSelectEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -1292,7 +1493,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1383,7 +1584,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1491,61 +1692,13 @@ MonoBehaviour:
   _interactableView: {fileID: 6020632634388682293}
   _whenHover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1154102395401183372}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnhover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1154102395401183372}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6746062635449139559}
-        m_TargetAssemblyTypeName: TextManager, Assembly-CSharp
-        m_MethodName: ChangeText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1154102395401183372}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeSelectEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -1630,7 +1783,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1877,7 +2030,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1985,61 +2138,13 @@ MonoBehaviour:
   _interactableView: {fileID: 1339741519572188518}
   _whenHover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3522033692538428576}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnhover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3522033692538428576}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6746062635449139559}
-        m_TargetAssemblyTypeName: TextManager, Assembly-CSharp
-        m_MethodName: ChangeText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 3522033692538428576}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeSelectEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -2055,6 +2160,144 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &5027059053659769148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1607067438959667674}
+  - component: {fileID: 7876474463796493303}
+  - component: {fileID: 6641766454680301120}
+  - component: {fileID: 7692714740911584001}
+  - component: {fileID: 342248031540445495}
+  m_Layer: 0
+  m_Name: Capsule
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1607067438959667674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5027059053659769148}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.3264, y: 0.3554, z: -0.0373}
+  m_LocalScale: {x: 0.33, y: 0.01266198, z: 0.01266198}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6228908960757388911}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7876474463796493303
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5027059053659769148}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &6641766454680301120
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5027059053659769148}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7692714740911584001
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5027059053659769148}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Height: 1
+  m_Direction: 0
+  m_Center: {x: -0.00012207031, y: -0.0009765625, z: 0}
+--- !u!54 &342248031540445495
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5027059053659769148}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5277693286915022669
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,7 +2367,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2232,61 +2475,13 @@ MonoBehaviour:
   _interactableView: {fileID: 8855659820708008500}
   _whenHover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1178875549288978041}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnhover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1178875549288978041}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6746062635449139559}
-        m_TargetAssemblyTypeName: TextManager, Assembly-CSharp
-        m_MethodName: ChangeText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1178875549288978041}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeSelectEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -2371,7 +2566,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2574,12 +2769,16 @@ Transform:
   m_GameObject: {fileID: 5642530757168425362}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 601.8541, y: 140.89465, z: 91.12551}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalPosition: {x: 601.897, y: 140.89465, z: 91.121}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6744888209312261649}
-  - {fileID: 2043093631771693971}
+  - {fileID: 6317565438840744614}
+  - {fileID: 1607067438959667674}
+  - {fileID: 9036851153934073720}
+  - {fileID: 1721189295733835676}
+  - {fileID: 7575341200801778255}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5714058662300527834
@@ -2694,7 +2893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.2520156, a: 0.9254902}
+  m_Color: {r: 0.5698112, g: 0.36446416, b: 0.41600224, a: 0.9254902}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2711,6 +2910,163 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &5980344862430874309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6317565438840744614}
+  - component: {fileID: 5198177607821978281}
+  - component: {fileID: 7530924579613014617}
+  - component: {fileID: 7022859215773868910}
+  - component: {fileID: 1474352388896580926}
+  - component: {fileID: 7485772552039874252}
+  m_Layer: 0
+  m_Name: DistanceGrabObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6317565438840744614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5980344862430874309}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.322, y: 0.361, z: -0.08}
+  m_LocalScale: {x: 0.33, y: 0.012661977, z: 0.012661977}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3263408403873992424}
+  - {fileID: 2043093631771693971}
+  m_Father: {fileID: 6228908960757388911}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5198177607821978281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5980344862430874309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b023183069df224080314a560e6e1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockId: 7358e191-33b7-43ca-b066-b2f00531ac66
+  instanceId: 18dd3a95-13e8-43c9-8b56-1d14826f7708
+  version: 1
+  installationRoutineCheckpoint:
+    _installationRoutineId: 
+    _installationVariants: []
+--- !u!33 &7530924579613014617
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5980344862430874309}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &7022859215773868910
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5980344862430874309}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 299b96464a7e2894b833c2ec3f9c335e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1474352388896580926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5980344862430874309}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7485772552039874252
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5980344862430874309}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6102568438800290165
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,7 +3082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6744888209312261649
 Transform:
   m_ObjectHideFlags: 0
@@ -2791,8 +3147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: -0.014312744}
-  m_SizeDelta: {x: -46.845, y: -63.3}
+  m_AnchoredPosition: {x: 0.000061035156, y: -56}
+  m_SizeDelta: {x: -46.8, y: -175.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8227149656567995610
 CanvasRenderer:
@@ -2814,8 +3170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.0093746185, g: 0, b: 1, a: 0.32941177}
+  m_Material: {fileID: -876546973899608171, guid: 272a90b3db5df1f49a86abe84c78f5d8, type: 3}
+  m_Color: {r: 0.72900325, g: 0.10361691, b: 0.87169814, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2831,7 +3187,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.3
 --- !u!1 &7939778116222417442
 GameObject:
   m_ObjectHideFlags: 0
@@ -2901,7 +3257,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3009,61 +3365,13 @@ MonoBehaviour:
   _interactableView: {fileID: 7239537023503070412}
   _whenHover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1178875549288978041}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnhover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1178875549288978041}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6746062635449139559}
-        m_TargetAssemblyTypeName: TextManager, Assembly-CSharp
-        m_MethodName: ChangeText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1586591706360908641}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeSelectEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -3148,7 +3456,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3256,61 +3564,13 @@ MonoBehaviour:
   _interactableView: {fileID: 4996956066915641463}
   _whenHover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1178875549288978041}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnhover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1178875549288978041}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6746062635449139559}
-        m_TargetAssemblyTypeName: TextManager, Assembly-CSharp
-        m_MethodName: ChangeText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6295634170556000029}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeSelectEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -3403,8 +3663,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294573951
-  m_fontColor: {r: 0.49622637, g: 1, b: 0.9773252, a: 1}
+    rgba: 4294046441
+  m_fontColor: {r: 0.9132147, g: 0.94716984, b: 0.9443162, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3421,8 +3681,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17.6
-  m_fontSizeBase: 17.6
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3489,14 +3749,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8419927372244495768}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.125, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.369697, y: -28.510555, z: 2.8036697}
+  m_LocalScale: {x: 3.030303, y: 78.97661, z: 78.97661}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4113466718322814259}
   - {fileID: 7755503341627617483}
-  m_Father: {fileID: 6228908960757388911}
+  m_Father: {fileID: 6317565438840744614}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8722834326768239012
 GameObject:
@@ -3567,7 +3827,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3675,61 +3935,13 @@ MonoBehaviour:
   _interactableView: {fileID: 2710469197241715943}
   _whenHover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014886248597992386}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnhover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2014886248597992386}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeHoverExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6746062635449139559}
-        m_TargetAssemblyTypeName: TextManager, Assembly-CSharp
-        m_MethodName: ChangeText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2014886248597992386}
-        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
-        m_MethodName: ChangeSelectEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -3814,7 +4026,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3992,6 +4204,51 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &9066956843403907797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7575341200801778255}
+  - component: {fileID: 331098067979239184}
+  m_Layer: 0
+  m_Name: VoiceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7575341200801778255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9066956843403907797}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.60876465, y: 0.74638367, z: 0.015785217}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6228908960757388911}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &331098067979239184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9066956843403907797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe4b4ec63a22d54fb073575b4f95394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voiceExperience: {fileID: 0}
 --- !u!1 &9117526453591883175
 GameObject:
   m_ObjectHideFlags: 0
@@ -4137,7 +4394,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8345bed3ad2c5d41b739d5609a8c24c, type: 2}
+  - {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4291,6 +4548,1537 @@ MonoBehaviour:
       - m_Target: {fileID: 1307814776157950772}
         m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
         m_MethodName: ChangeSelectEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1001 &3158775224662020254
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9036851153934073720}
+    m_Modifications:
+    - target: {fileID: -9201560969179595052, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7123555
+      objectReference: {fileID: 0}
+    - target: {fileID: -9201560969179595052, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.70181876
+      objectReference: {fileID: 0}
+    - target: {fileID: -9201560969179595052, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.00000023841852
+      objectReference: {fileID: 0}
+    - target: {fileID: -9201560969179595052, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000008195637
+      objectReference: {fileID: 0}
+    - target: {fileID: -9201560969179595052, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 89.146
+      objectReference: {fileID: 0}
+    - target: {fileID: -9201560969179595052, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: -9201560969179595052, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -563.01483
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -19.632936
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -126.074554
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7349995723872495512, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_Name
+      value: RockerArmAssembly
+      objectReference: {fileID: 0}
+    - target: {fileID: -7146521406498821007, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_Name
+      value: Crankcase
+      objectReference: {fileID: 0}
+    - target: {fileID: -6877481245417288963, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
+    - target: {fileID: -5428232151515439880, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
+    - target: {fileID: -3805046023420550222, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99686706
+      objectReference: {fileID: 0}
+    - target: {fileID: -3805046023420550222, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0074272156
+      objectReference: {fileID: 0}
+    - target: {fileID: -3805046023420550222, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00058668765
+      objectReference: {fileID: 0}
+    - target: {fileID: -3805046023420550222, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.078744516
+      objectReference: {fileID: 0}
+    - target: {fileID: -3805046023420550222, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.843
+      objectReference: {fileID: 0}
+    - target: {fileID: -3805046023420550222, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.134
+      objectReference: {fileID: 0}
+    - target: {fileID: -3805046023420550222, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -9.034
+      objectReference: {fileID: 0}
+    - target: {fileID: -3641000652193603279, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_Name
+      value: TimingGear
+      objectReference: {fileID: 0}
+    - target: {fileID: -2271502847731017999, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7018567
+      objectReference: {fileID: 0}
+    - target: {fileID: -2271502847731017999, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.71097225
+      objectReference: {fileID: 0}
+    - target: {fileID: -2271502847731017999, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.032414872
+      objectReference: {fileID: 0}
+    - target: {fileID: -2271502847731017999, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.029411536
+      objectReference: {fileID: 0}
+    - target: {fileID: -2271502847731017999, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -95.065
+      objectReference: {fileID: 0}
+    - target: {fileID: -2271502847731017999, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 81.491
+      objectReference: {fileID: 0}
+    - target: {fileID: -2271502847731017999, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -81.734985
+      objectReference: {fileID: 0}
+    - target: {fileID: -1793627245685995975, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49626094
+      objectReference: {fileID: 0}
+    - target: {fileID: -1793627245685995975, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5037113
+      objectReference: {fileID: 0}
+    - target: {fileID: -1793627245685995975, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.49626094
+      objectReference: {fileID: 0}
+    - target: {fileID: -1793627245685995975, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5037113
+      objectReference: {fileID: 0}
+    - target: {fileID: -1793627245685995975, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.854
+      objectReference: {fileID: 0}
+    - target: {fileID: -1793627245685995975, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70181894
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7123554
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000022351736
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000014901158
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.854
+      objectReference: {fileID: 0}
+    - target: {fileID: -804731622281664130, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
+    - target: {fileID: 919132149155446097, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_Name
+      value: engine-final
+      objectReference: {fileID: 0}
+    - target: {fileID: 4321514657177891973, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
+    - target: {fileID: 4649304590781711473, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_Name
+      value: FlyWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5233112405309087440, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_Name
+      value: SparkPlug
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830945432629781959, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70094913
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830945432629781959, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.71188945
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830945432629781959, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.031344555
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830945432629781959, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.030021742
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830945432629781959, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -95.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830945432629781959, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 79.838
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830945432629781959, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -79.94501
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009987137999418058, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: m_Name
+      value: CylinderHead
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442510506162454399, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
+    - target: {fileID: 8926683419137584235, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5233112405309087440, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7605421438365039633}
+    - targetCorrespondingSourceObject: {fileID: 5233112405309087440, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3186708499144108273}
+    - targetCorrespondingSourceObject: {fileID: 5233112405309087440, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5087149368499017244}
+    - targetCorrespondingSourceObject: {fileID: 5233112405309087440, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5000506912356790946}
+    - targetCorrespondingSourceObject: {fileID: 5233112405309087440, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1500574113276683013}
+    - targetCorrespondingSourceObject: {fileID: 5233112405309087440, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8580140603577021141}
+    - targetCorrespondingSourceObject: {fileID: 4649304590781711473, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5304431969399959300}
+    - targetCorrespondingSourceObject: {fileID: 4649304590781711473, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1700830727077823740}
+    - targetCorrespondingSourceObject: {fileID: 4649304590781711473, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6362423604751917866}
+    - targetCorrespondingSourceObject: {fileID: 4649304590781711473, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8162429672583328968}
+    - targetCorrespondingSourceObject: {fileID: 4649304590781711473, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6309682488357175235}
+    - targetCorrespondingSourceObject: {fileID: 4649304590781711473, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5420468131940140634}
+    - targetCorrespondingSourceObject: {fileID: -7146521406498821007, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1289725555783951190}
+    - targetCorrespondingSourceObject: {fileID: -7146521406498821007, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 713281597317775480}
+    - targetCorrespondingSourceObject: {fileID: -7146521406498821007, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1738816827558854111}
+    - targetCorrespondingSourceObject: {fileID: -7146521406498821007, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2094566357375477859}
+    - targetCorrespondingSourceObject: {fileID: -7146521406498821007, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 627884679911731986}
+    - targetCorrespondingSourceObject: {fileID: -7146521406498821007, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8155673344701876952}
+    - targetCorrespondingSourceObject: {fileID: 8009987137999418058, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7639646329625255127}
+    - targetCorrespondingSourceObject: {fileID: 8009987137999418058, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3111639064104967747}
+    - targetCorrespondingSourceObject: {fileID: 8009987137999418058, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3325030870955659816}
+    - targetCorrespondingSourceObject: {fileID: 8009987137999418058, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7992914365490199013}
+    - targetCorrespondingSourceObject: {fileID: 8009987137999418058, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9132797287163885709}
+    - targetCorrespondingSourceObject: {fileID: 8009987137999418058, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5067460015713902159}
+    - targetCorrespondingSourceObject: {fileID: -3641000652193603279, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1701717424073921293}
+    - targetCorrespondingSourceObject: {fileID: -3641000652193603279, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2613610117119433917}
+    - targetCorrespondingSourceObject: {fileID: -3641000652193603279, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5662434052270059213}
+    - targetCorrespondingSourceObject: {fileID: -3641000652193603279, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8432886864800597343}
+    - targetCorrespondingSourceObject: {fileID: -3641000652193603279, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 434657595854508535}
+    - targetCorrespondingSourceObject: {fileID: -3641000652193603279, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2421542880356554634}
+    - targetCorrespondingSourceObject: {fileID: -7349995723872495512, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7714248384533509402}
+    - targetCorrespondingSourceObject: {fileID: -7349995723872495512, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 697849278517740488}
+    - targetCorrespondingSourceObject: {fileID: -7349995723872495512, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 999754350058303}
+    - targetCorrespondingSourceObject: {fileID: -7349995723872495512, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2149158606745927123}
+    - targetCorrespondingSourceObject: {fileID: -7349995723872495512, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4670661026466546802}
+    - targetCorrespondingSourceObject: {fileID: -7349995723872495512, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2876568674437320803}
+  m_SourcePrefab: {fileID: 100100000, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+--- !u!4 &3196570752496547701 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+  m_PrefabInstance: {fileID: 3158775224662020254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3614605445642602742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7349995723872495512, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+  m_PrefabInstance: {fileID: 3158775224662020254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7714248384533509402
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3614605445642602742}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1916698731132419136, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+--- !u!114 &697849278517740488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3614605445642602742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb86ba9d4c5126e48bfef9b0c9550e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 0}
+  _surface: {fileID: 999754350058303}
+  _selectSurface: {fileID: 0}
+  _movementProvider: {fileID: 0}
+  _tiebreakerScore: 0
+--- !u!114 &999754350058303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3614605445642602742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 7714248384533509402}
+--- !u!114 &2149158606745927123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3614605445642602742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa00464cf7ce914590761af1f46502e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMaterial: {fileID: 2100000, guid: 564baa22202a94c46abfdb5c822e0d8f, type: 2}
+  hoverMaterial: {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
+  selectMaterial: {fileID: 2100000, guid: 1eafcffb36243a14ebca02a1e6f398cf, type: 2}
+--- !u!114 &4670661026466546802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3614605445642602742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b61a0effa99a94e8ff9a220871528d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: {fileID: 9021693944522377749}
+  descriptionText: {fileID: 7098499287506824130}
+  text1: Rocker Arm Assembly
+  text2: The rocker arm is a critical component in the valve train of an internal
+    combustion engine. It transfers motion from the camshaft (via pushrods) to the
+    valves, enabling them to open and close. The orange line indicates the motion
+    path between the camshaft and the valves.
+--- !u!114 &2876568674437320803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3614605445642602742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 697849278517740488}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2149158606745927123}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeHoverEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2149158606745927123}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeHoverExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2149158606745927123}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeSelectEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4670661026466546802}
+        m_TargetAssemblyTypeName: UIUpdate, Assembly-CSharp
+        m_MethodName: TextUpdate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4607787781141098856}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &3964379272673590511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7146521406498821007, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+  m_PrefabInstance: {fileID: 3158775224662020254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1289725555783951190
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964379272673590511}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8678823145569952518, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+--- !u!114 &713281597317775480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964379272673590511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb86ba9d4c5126e48bfef9b0c9550e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 0}
+  _surface: {fileID: 1738816827558854111}
+  _selectSurface: {fileID: 0}
+  _movementProvider: {fileID: 0}
+  _tiebreakerScore: 0
+--- !u!114 &1738816827558854111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964379272673590511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 1289725555783951190}
+--- !u!114 &2094566357375477859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964379272673590511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa00464cf7ce914590761af1f46502e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMaterial: {fileID: 2100000, guid: 564baa22202a94c46abfdb5c822e0d8f, type: 2}
+  hoverMaterial: {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
+  selectMaterial: {fileID: 2100000, guid: 1eafcffb36243a14ebca02a1e6f398cf, type: 2}
+--- !u!114 &627884679911731986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964379272673590511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b61a0effa99a94e8ff9a220871528d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: {fileID: 9021693944522377749}
+  descriptionText: {fileID: 7098499287506824130}
+  text1: Crankcase
+  text2: Houses the crankshaft and facilitates air-fuel mixture compression.
+--- !u!114 &8155673344701876952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964379272673590511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 713281597317775480}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2094566357375477859}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeHoverEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2094566357375477859}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeHoverExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2094566357375477859}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeSelectEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 627884679911731986}
+        m_TargetAssemblyTypeName: UIUpdate, Assembly-CSharp
+        m_MethodName: TextUpdate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4607787781141098856}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &4971702994580005460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8009987137999418058, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+  m_PrefabInstance: {fileID: 3158775224662020254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7639646329625255127
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971702994580005460}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -153830957423991239, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+--- !u!114 &3111639064104967747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971702994580005460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb86ba9d4c5126e48bfef9b0c9550e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 0}
+  _surface: {fileID: 3325030870955659816}
+  _selectSurface: {fileID: 0}
+  _movementProvider: {fileID: 0}
+  _tiebreakerScore: 0
+--- !u!114 &3325030870955659816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971702994580005460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 7639646329625255127}
+--- !u!114 &7992914365490199013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971702994580005460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa00464cf7ce914590761af1f46502e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMaterial: {fileID: 2100000, guid: 564baa22202a94c46abfdb5c822e0d8f, type: 2}
+  hoverMaterial: {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
+  selectMaterial: {fileID: 2100000, guid: 1eafcffb36243a14ebca02a1e6f398cf, type: 2}
+--- !u!114 &9132797287163885709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971702994580005460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b61a0effa99a94e8ff9a220871528d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: {fileID: 9021693944522377749}
+  descriptionText: {fileID: 7098499287506824130}
+  text1: Cylinder Head
+  text2: The cylinder head is the upper part of an engine that sits atop the cylinders
+    and closes the combustion chamber. It plays a crucial role in the engine's operation
+    by housing components.
+--- !u!114 &5067460015713902159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971702994580005460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 3111639064104967747}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7992914365490199013}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeHoverEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7992914365490199013}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeHoverExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7992914365490199013}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeSelectEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9132797287163885709}
+        m_TargetAssemblyTypeName: UIUpdate, Assembly-CSharp
+        m_MethodName: TextUpdate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4607787781141098856}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &7154523626848095822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5233112405309087440, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+  m_PrefabInstance: {fileID: 3158775224662020254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7605421438365039633
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7154523626848095822}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+--- !u!114 &3186708499144108273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7154523626848095822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb86ba9d4c5126e48bfef9b0c9550e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 0}
+  _surface: {fileID: 5087149368499017244}
+  _selectSurface: {fileID: 0}
+  _movementProvider: {fileID: 0}
+  _tiebreakerScore: 0
+--- !u!114 &5087149368499017244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7154523626848095822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 7605421438365039633}
+--- !u!114 &5000506912356790946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7154523626848095822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa00464cf7ce914590761af1f46502e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMaterial: {fileID: 2100000, guid: 564baa22202a94c46abfdb5c822e0d8f, type: 2}
+  hoverMaterial: {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
+  selectMaterial: {fileID: 2100000, guid: 1eafcffb36243a14ebca02a1e6f398cf, type: 2}
+--- !u!114 &1500574113276683013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7154523626848095822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b61a0effa99a94e8ff9a220871528d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: {fileID: 9021693944522377749}
+  descriptionText: {fileID: 7098499287506824130}
+  text1: Spark Plug
+  text2: Initiates combustion by igniting the air-fuel mixture.
+--- !u!114 &8580140603577021141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7154523626848095822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 3186708499144108273}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5000506912356790946}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeHoverEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5000506912356790946}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeHoverExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5000506912356790946}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeSelectEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1500574113276683013}
+        m_TargetAssemblyTypeName: UIUpdate, Assembly-CSharp
+        m_MethodName: TextUpdate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4607787781141098856}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &7399036394598838703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3641000652193603279, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+  m_PrefabInstance: {fileID: 3158775224662020254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1701717424073921293
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7399036394598838703}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6233881508918280898, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+--- !u!114 &2613610117119433917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7399036394598838703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb86ba9d4c5126e48bfef9b0c9550e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 0}
+  _surface: {fileID: 5662434052270059213}
+  _selectSurface: {fileID: 0}
+  _movementProvider: {fileID: 0}
+  _tiebreakerScore: 0
+--- !u!114 &5662434052270059213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7399036394598838703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 1701717424073921293}
+--- !u!114 &8432886864800597343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7399036394598838703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa00464cf7ce914590761af1f46502e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMaterial: {fileID: 2100000, guid: 564baa22202a94c46abfdb5c822e0d8f, type: 2}
+  hoverMaterial: {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
+  selectMaterial: {fileID: 2100000, guid: 1eafcffb36243a14ebca02a1e6f398cf, type: 2}
+--- !u!114 &434657595854508535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7399036394598838703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b61a0effa99a94e8ff9a220871528d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: {fileID: 9021693944522377749}
+  descriptionText: {fileID: 7098499287506824130}
+  text1: Timing Gear
+  text2: This gear is part of the engine's timing mechanism, responsible for synchronizing
+    the movement of the camshaft and crankshaft. It ensures that the intake and exhaust
+    valves open and close at the correct times during the engine's operation cycle.
+--- !u!114 &2421542880356554634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7399036394598838703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 2613610117119433917}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8432886864800597343}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeHoverEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8432886864800597343}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeHoverExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8432886864800597343}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeSelectEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 434657595854508535}
+        m_TargetAssemblyTypeName: UIUpdate, Assembly-CSharp
+        m_MethodName: TextUpdate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4607787781141098856}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &7733697268568282351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4649304590781711473, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+  m_PrefabInstance: {fileID: 3158775224662020254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5304431969399959300
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733697268568282351}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2504345457074934838, guid: 8889f96c6bd662541ac4ffbd98ad251d, type: 3}
+--- !u!114 &1700830727077823740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733697268568282351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb86ba9d4c5126e48bfef9b0c9550e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 0}
+  _surface: {fileID: 6362423604751917866}
+  _selectSurface: {fileID: 0}
+  _movementProvider: {fileID: 0}
+  _tiebreakerScore: 0
+--- !u!114 &6362423604751917866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733697268568282351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 5304431969399959300}
+--- !u!114 &8162429672583328968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733697268568282351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa00464cf7ce914590761af1f46502e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMaterial: {fileID: 2100000, guid: 564baa22202a94c46abfdb5c822e0d8f, type: 2}
+  hoverMaterial: {fileID: 2100000, guid: 183597662b435d24ebabad9b017709b7, type: 2}
+  selectMaterial: {fileID: 2100000, guid: 1eafcffb36243a14ebca02a1e6f398cf, type: 2}
+--- !u!114 &6309682488357175235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733697268568282351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b61a0effa99a94e8ff9a220871528d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: {fileID: 9021693944522377749}
+  descriptionText: {fileID: 7098499287506824130}
+  text1: Fly Wheel
+  text2: Stores rotational energy to maintain engine momentum.
+--- !u!114 &5420468131940140634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733697268568282351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1700830727077823740}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8162429672583328968}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeHoverEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8162429672583328968}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeHoverExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8162429672583328968}
+        m_TargetAssemblyTypeName: ChangeMaterialOnHover, Assembly-CSharp
+        m_MethodName: ChangeSelectEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6309682488357175235}
+        m_TargetAssemblyTypeName: UIUpdate, Assembly-CSharp
+        m_MethodName: TextUpdate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4607787781141098856}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
