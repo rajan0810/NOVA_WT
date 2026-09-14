@@ -72,3 +72,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Crash dumps and local Wit config exports (not meant to be tracked)
+mono_crash.*.json
+ProjectSettings/WitConfigExports/

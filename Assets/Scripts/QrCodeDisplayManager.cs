@@ -36,6 +36,16 @@ public class QrCodeDisplayManager : MonoBehaviour
 
     private void Awake()
     {
+        if (!scanner || !envRaycastManager || !passthroughCameraManager || !enginePrefab)
+        {
+            Debug.LogError("[QrCodeDisplayManager] One or more required references are unassigned in the Inspector " +
+                            $"(scanner={(scanner ? "OK" : "MISSING")}, envRaycastManager={(envRaycastManager ? "OK" : "MISSING")}, " +
+                            $"passthroughCameraManager={(passthroughCameraManager ? "OK" : "MISSING")}, enginePrefab={(enginePrefab ? "OK" : "MISSING")}). " +
+                            "Scanning and spawning will not run until this is fixed.");
+            enabled = false;
+            return;
+        }
+
         _passthroughCameraEye = passthroughCameraManager.Eye;
         // Attempt to load any saved anchors on startup
         LoadSavedAnchors();
@@ -50,10 +60,18 @@ public class QrCodeDisplayManager : MonoBehaviour
     {
         var qrResults = await scanner.ScanFrameAsync() ?? Array.Empty<QrCodeResult>();
 
+        if (qrResults.Length > 0)
+        {
+            Debug.Log($"[QrCodeDisplayManager] Detected {qrResults.Length} QR code(s): {string.Join(", ", Array.ConvertAll(qrResults, r => r.text))}");
+        }
+
         foreach (var qrResult in qrResults)
         {
             if (qrResult?.corners == null || qrResult.corners.Length < 4)
+            {
+                Debug.LogWarning($"[QrCodeDisplayManager] QR '{qrResult?.text}' skipped: fewer than 4 corners detected.");
                 continue;
+            }
 
             var centerUV = CalculateCenterUV(qrResult.corners);
             var intrinsics = PassthroughCameraUtils.GetCameraIntrinsics(_passthroughCameraEye);
@@ -66,7 +84,10 @@ public class QrCodeDisplayManager : MonoBehaviour
             var centerRay = PassthroughCameraUtils.ScreenPointToRayInWorld(_passthroughCameraEye, centerPixel);
 
             if (!envRaycastManager.Raycast(centerRay, out var hitInfo))
+            {
+                Debug.LogWarning($"[QrCodeDisplayManager] QR '{qrResult.text}' decoded but environment raycast found no surface. Room may not be scanned yet, or QR is out of raycast range.");
                 continue;
+            }
 
             var spawnPosition = hitInfo.point; // Position in world space where the object will spawn
             var spawnRotation = Quaternion.LookRotation(hitInfo.normal); // Align rotation with surface normal
@@ -96,7 +117,7 @@ public class QrCodeDisplayManager : MonoBehaviour
         AnchorMappingList mappingList = GetAnchorMappings();
         if (mappingList.mappings.Count == 0)
         {
-            Debug.Log("No saved anchors found.");
+            Debug.Log("[QrCodeDisplayManager] No saved anchors found.");
             return;
         }
 
@@ -117,7 +138,7 @@ public class QrCodeDisplayManager : MonoBehaviour
         var loadResult = await OVRSpatialAnchor.LoadUnboundAnchorsAsync(uuids, unboundAnchors);
         if (loadResult.Success)
         {
-            Debug.Log("Anchors loaded successfully.");
+            Debug.Log("[QrCodeDisplayManager] Anchors loaded successfully.");
             foreach (var unboundAnchor in unboundAnchors)
             {
                 // Await localization for each anchor.
@@ -133,17 +154,17 @@ public class QrCodeDisplayManager : MonoBehaviour
                     unboundAnchor.BindTo(spatialAnchor);
 
                     _spawnedObjects[qrText] = newObj;
-                    Debug.Log($"Loaded and bound anchor for QR code {qrText}");
+                    Debug.Log($"[QrCodeDisplayManager] Loaded and bound anchor for QR code {qrText}");
                 }
                 else
                 {
-                    Debug.LogError($"Localization failed for anchor {unboundAnchor.Uuid}");
+                    Debug.LogError($"[QrCodeDisplayManager] Localization failed for anchor {unboundAnchor.Uuid}");
                 }
             }
         }
         else
         {
-            Debug.LogError($"Failed to load anchors with error {loadResult.Status}");
+            Debug.LogError($"[QrCodeDisplayManager] Failed to load anchors with error {loadResult.Status}");
         }
     }
 
@@ -209,16 +230,16 @@ public class QrCodeDisplayManager : MonoBehaviour
         var saveResult = await spatialAnchor.SaveAnchorAsync();
         if (saveResult.Success)
         {
-            Debug.Log($"Anchor {spatialAnchor.Uuid} saved successfully for QR code {qrText}");
+            Debug.Log($"[QrCodeDisplayManager] Anchor {spatialAnchor.Uuid} saved successfully for QR code {qrText}");
             SaveAnchorMapping(qrText, spatialAnchor.Uuid);
         }
         else
         {
-            Debug.LogError($"Failed to save anchor for QR code {qrText} with error {saveResult.Status}");
+            Debug.LogError($"[QrCodeDisplayManager] Failed to save anchor for QR code {qrText} with error {saveResult.Status}");
         }
 
         _spawnedObjects[qrText] = spawnedObject;
-        Debug.Log($"Spawned object for QR code: {qrText} at {position}");
+        Debug.Log($"[QrCodeDisplayManager] Spawned object for QR code: {qrText} at {position}");
     }
 
     /// <summary>
@@ -236,7 +257,7 @@ public class QrCodeDisplayManager : MonoBehaviour
 
             Destroy(obj);
             _spawnedObjects.Remove(qrText);
-            Debug.Log($"Despawned object for QR code: {qrText}");
+            Debug.Log($"[QrCodeDisplayManager] Despawned object for QR code: {qrText}");
         }
     }
 #endif

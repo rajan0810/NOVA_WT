@@ -12,26 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
   m_Name: new_link
   m_EditorClassIdentifier: 
-  _clientAccessToken: YBPXY42NUROTDUAR7ZGZ2RUYFX44X5D3
+  _clientAccessToken: 4W2L2SDJTQ6X5F7TNZXWFRKX2LW3MTZY
   editorVersionTag: 
   buildVersionTag: 
   _appInfo:
-    name: tutorial
-    id: 1902078163949265
+    name: nova
+    id: 1066610669676062
     lang: en
-    isPrivate: 1
-    createdAt: 2025-04-01T16:06:16-0700
+    isPrivate: 0
+    createdAt: 2026-09-14T04:51:53-0700
     trainingStatus: 1
     lastTrainDuration: 0
     lastTrainedAt: 1969-12-31T16:00:00-0800
     nextTrainAt: 1969-12-31T16:00:00-0800
-    intents:
-    - id: 667578629154281
-      name: wit$confirmation
-      entities: []
-    - id: 1235935907953076
-      name: wit$negation
-      entities: []
+    intents: []
     entities: []
     traits: []
     versionTags: []

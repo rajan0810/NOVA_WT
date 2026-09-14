@@ -282,9 +282,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6669015522134640172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 459701ea388e54a71b9af45cb14fd027, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Script: {fileID: 11500000, guid: 0746d005f704e4d4ea09b4b79fd8a718, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
   lastUpdateTime: 0
 --- !u!33 &3062320157266883616
 MeshFilter:

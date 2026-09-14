@@ -92,6 +92,14 @@ public class QrCodeScanner : MonoBehaviour
             }
 
             var webCamTex = camHelper.WebCamTexture;
+            if (!webCamTex || !webCamTex.isPlaying)
+            {
+                var reason = !camHelper.enabled
+                    ? "camHelper is disabled (passthrough camera not supported here, e.g. Editor Play mode or non-Quest device)"
+                    : "camera texture not yet playing (waiting on permission/init)";
+                Debug.LogWarning($"[QRCodeScanner] Waiting for passthrough camera: {reason}.");
+            }
+
             while (!webCamTex || !webCamTex.isPlaying)
             {
                 await Task.Delay(16);
