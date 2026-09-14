@@ -539,7 +539,7 @@ MonoBehaviour:
   - {fileID: 3972200863694921229}
   _configurationId: 67a536c1-4bd2-48e6-9b01-6446fc4d5184
   _requestType: 0
-  _requestTimeoutMs: 10000
+  _requestTimeoutMs: 30000
   endpointConfiguration:
     _uriScheme: 
     _authority: 

@@ -2165,7 +2165,7 @@ MonoBehaviour:
     maxConcurrentRequests: -1
     audioStreamPreloadCount: 5
     audioReadyDuration: 1.5
-    audioMaxDuration: 15
+    audioMaxDuration: 60
   _presetVoiceSettings:
   - SettingsId: WIT$BRITISH BUTLER
     PrependedText: 
@@ -5920,6 +5920,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2898737460817343716, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898737460817343716, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3392031561633389484, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -46.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3392031561633389484, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -314.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3392031561633389484, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.000067768
+      objectReference: {fileID: 0}
+    - target: {fileID: 3392031561633389484, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.008972168
+      objectReference: {fileID: 0}
+    - target: {fileID: 3392031561633389484, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -119.7
+      objectReference: {fileID: 0}
     - target: {fileID: 4179610605784670482, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
       propertyPath: m_Name
       value: DistanceGrabObject (1)
@@ -5963,6 +5991,26 @@ PrefabInstance:
     - target: {fileID: 5476218616762354217, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646422925341368837, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 502.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646422925341368837, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 318.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646422925341368837, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0029596
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646422925341368837, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0010743
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646422925341368837, guid: 45903cd708aa14e34b29024e99b5ef06, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.9514
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
